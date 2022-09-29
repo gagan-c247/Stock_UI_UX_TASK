@@ -82,7 +82,7 @@ header .logo span {
     color: #444;
 }
 .header-shadow {
-    box-shadow: 0 0.46875rem 2.1875rem rgb(4 9 20 / 3%), 0 0.9375rem 1.40625rem rgb(4 9 20 / 3%), 0 0.25rem 0.53125rem rgb(4 9 20 / 5%), 0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
+    box-shadow: 0 0.46875rem 2.1875rem rgb(4 9 20 / 3%), inset 0 0.9375rem 1.40625rem rgb(4 9 20 / 3%), inset 0 0.25rem 0.53125rem rgb(4 9 20 / 5%), inset 0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
 }
 
 .right_bar .checkbox {
@@ -101,6 +101,10 @@ header .logo span {
   padding: 5px;
   position: relative;
   transform: scale(1.5);
+}
+.right_bar .label svg {
+    width: 11px;
+    height: 11px;
 }
 
 .right_bar .ball {
@@ -230,10 +234,11 @@ header .logo span {
     padding: 0.75rem;
 }
 .table {
-    border: 1px solid #8277e41c;
+    /*border: 1px solid #8277e41c;*/
     border-radius: 6px;
     /*display: table-cell;*/
     font-size: 14px;
+    overflow: hidden;
 }
 .table thead th {
     vertical-align: bottom;
@@ -245,8 +250,12 @@ header .logo span {
 .table tr th {
     font-weight: 600;
 }
+.table tbody tr {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
 .table tbody tr:nth-child(even) {
-    background: #f7f7f7;
+    /*background: #f7f7f7;*/
 }
 .table td:nth-child(6) {
     /* text-align: center; */
@@ -254,9 +263,8 @@ header .logo span {
 .option_table {
     display: block;
     box-shadow: rgb(0 0 0 / 10%) 0px 13px 15px -8px;
-
     padding: 0px;
-    border-radius: 10px;
+    border-radius: 6px;
     background: #fff;
 }
 .table span.up, .table span.down {
@@ -294,7 +302,8 @@ header .logo span {
 /*   Dark mode css start here   */
 
 .dark-mode .top_header {
-    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(62 67 83) 70.2%);
+    /*background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(62 67 83) 70.2%);*/
+    background: #3e4353;
     color: #fff;
 }
 .dark-mode .logo {
@@ -308,4 +317,70 @@ header .logo span {
     color: #e5e5e5;
 }
 
-
+.dark-mode .menu_sidebar .menu_item {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(62 67 83) 70.2%);
+    color: #fff;
+    box-shadow: #5b5f6d -28px 0px 30px -30px inset;
+}
+.dark-mode .menu_sidebar .menu_item.active, .dark-mode .menu_sidebar .menu_item:hover {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(62 67 83) 70.2%);
+    color: #fff;
+    border-left: 3px solid #d5d5d5;
+    border-radius: 2px 0 0 2px;
+}
+.dark-mode .menu_sidebar .icon {
+    background: linear-gradient(112.1deg, rgb(89 94 109) 11.4%, rgb(62 67 83) 70.2%);
+}
+.dark-mode .menu_sidebar .menu_item {
+    border-bottom: 1px solid #333849;
+    border-left: 3px solid #212739;
+}
+.dark-mode .glance_bar{
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(62 67 83) 70.2%);
+    padding-top: 58px;
+    margin-top: 0 !important;
+}
+.dark-mode .glance_bar .progress-bar {
+    background: #575757;
+}
+.dark-mode .menu_sidebar {
+    background: #3a3f4f;
+}
+.dark-mode .right_side_bar {
+    background: linear-gradient(112.1deg, #3e4353 11.4%, #202639 70.2%);
+}
+.dark-mode .option-header {
+    border-bottom: 1px solid #494a4e;
+}
+.dark-mode .option-header h5 {
+    color: #fff;
+}
+.dark-mode .table thead th {
+    border-bottom: 1px solid #4e515c;
+    background: #2f3446;
+    color: #fff;
+}
+.dark-mode .table tbody tr {
+    background: #252b3d;
+    border-bottom: 1px solid #373b46;
+    color: #fff;
+}
+.table thead tr th:first-child {
+    border-radius: 6px 0 0 0;
+}
+.table thead tr th:last-child {
+    border-radius: 0 6px 0 0;
+}
+.dark-mode .btn-group .btn {
+    background: #3e4353;
+    color: #fff;
+    border: 1px solid #3e4353;
+}
+.dark-mode .btn.btn-border {
+    background: transparent;
+}
+.dark-mode .btn.btn-border:hover {
+    background: #3e4353;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
