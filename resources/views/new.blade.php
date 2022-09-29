@@ -89,54 +89,54 @@
                     class="menu_item active inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
                     :class="{'justify-start': menu, 'justify-center': menu == false}">
                     <span class="icon"><i class="bi bi-house-door"></i></span>
-                    <span class="ml-2 menu_name" x-show="menu">Overview</span>
+                    <span class="ml-3 menu_name" x-show="menu">Overview</span>
                   </a>
                   <a href="#" class="menu_item inline-flex items-center py-3 text-blue-600 bg-white px-2"
                     :class="{'justify-start': menu, 'justify-center': menu == false}">
                     <span class="icon"><i class="bi bi-bar-chart"></i></span>
-                    <span class="ml-2 menu_name" x-show="menu">Chart</span>
+                    <span class="ml-3 menu_name" x-show="menu">Chart</span>
                   </a>
                   <a href="#"
                     class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
                     :class="{'justify-start': menu, 'justify-center': menu == false}">
                     <span class="icon"><i class="bi bi-eye-slash"></i></span>
-                    <span class="ml-2 menu_name" x-show="menu">Dark Pool</span>
+                    <span class="ml-3 menu_name" x-show="menu">Dark Pool</span>
                   </a>
                   <a href="#"
                     class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
                     :class="{'justify-start': menu, 'justify-center': menu == false}">
                     <span class="icon"><i class="bi bi-exclamation-triangle"></i></span>
-                    <span class="ml-2 menu_name" x-show="menu">Divergences</span>
+                    <span class="ml-3 menu_name" x-show="menu">Divergences</span>
                   </a>
                   <a href="#"
                     class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
                     :class="{'justify-start': menu, 'justify-center': menu == false}">
                     <span class="icon"><i class="bi bi-arrow-down-up"></i></span>
-                    <span class="ml-2 menu_name" x-show="menu">Cycle Data</span>
+                    <span class="ml-3 menu_name" x-show="menu">Cycle Data</span>
                   </a>
                   <a href="#"
                     class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
                     :class="{'justify-start': menu, 'justify-center': menu == false}">
                     <span class="icon"><i class="bi bi-file-earmark-text"></i></span>
-                    <span class="ml-2 menu_name" x-show="menu">Pivot Points</span>
+                    <span class="ml-3 menu_name" x-show="menu">Pivot Points</span>
                   </a>
                   <a href="#"
                     class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
                     :class="{'justify-start': menu, 'justify-center': menu == false}">
                     <span class="icon"><i class="bi bi-activity"></i></span>
-                    <span class="ml-2 menu_name" x-show="menu">Cheat Sheet</span>
+                    <span class="ml-3 menu_name" x-show="menu">Cheat Sheet</span>
                   </a>
                   <a href="#"
                     class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
                     :class="{'justify-start': menu, 'justify-center': menu == false}">
                     <span class="icon"><i class="bi bi-exclamation-triangle"></i></span>
-                    <span class="ml-2 menu_name" x-show="menu">All Trades</span>
+                    <span class="ml-3 menu_name" x-show="menu">All Trades</span>
                   </a>
                   <a href="#"
                     class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
                     :class="{'justify-start': menu, 'justify-center': menu == false}">
                     <span class="icon"><i class="bi bi-camera"></i></span>
-                    <span class="ml-2 menu_name" x-show="menu">Snapshots</span>
+                    <span class="ml-3 menu_name" x-show="menu">Snapshots</span>
                   </a>
                 </nav>
               </div>
@@ -177,45 +177,45 @@
                             <tr>
                               <th scope="row">METX</th>
                               <td>Meten Holding group Ltd.</td>
-                              <td>China</td>
+                              <td class="country flex items-center"><img src="{{asset('images/china.png')}}" alt="" /> China</td>
                               <td>7.73M</td>
-                              <td>0.56</td>
+                              <td>$ 0.56</td>
                               <td><span class="down">-3.50%</span></td>
                               <td>167619</td>
                             </tr>
                             <tr>
                               <th scope="row">JFU</th>
                               <td>9F Inc.</td>
-                              <td>China</td>
+                              <td class="country flex items-center"><img src="{{asset('images/china.png')}}" alt="" />China</td>
                               <td>95.58M</td>
-                              <td>0.39</td>
+                              <td>$ 0.39</td>
                               <td><span class="down">-4.85%</span></td>
                               <td>59,237</td>
                             </tr>
                             <tr>
                               <th scope="row">STIX</th>
                               <td>Semantic Inc.</td>
-                              <td>Brazil</td>
+                              <td class="country flex items-center"><img src="{{asset('images/brazil.png')}}" alt="" />Brazil</td>
                               <td>214.73M</td>
-                              <td>2.8</td>
+                              <td>$ 2.8</td>
                               <td><span class="up">9.18%</span></td>
                               <td>45,229</td>
                             </tr>
                             <tr>
                               <th scope="row">CRXT</th>
                               <td>Clerus TherapeuticsHolding, Inc.</td>
-                              <td>USA</td>
+                              <td class="country flex items-center"><img src="{{asset('images/usa.png')}}" alt="" />USA</td>
                               <td>4,15M</td>
-                              <td>0.06</td>
+                              <td>$ 0.06</td>
                               <td><span class="down">-17.20%</span></td>
                               <td>1,160,042</td>
                             </tr>
                             <tr>
                               <th scope="row">STIX</th>
                               <td>Semantic Inc.</td>
-                              <td>Brazil</td>
+                              <td class="country flex items-center"><img src="{{asset('images/brazil.png')}}" alt="" />Brazil</td>
                               <td>214.73M</td>
-                              <td>2.8</td>
+                              <td>$ 2.8</td>
                               <td><span class="up">9.18%</span></td>
                               <td>45,229</td>
                             </tr>

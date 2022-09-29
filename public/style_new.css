@@ -138,12 +138,14 @@ header .logo span {
     padding: 0.6rem 1rem;
     background: #fff;
     color: #495057;
-    box-shadow: #b6b6b6 -28px 0px 30px -30px inset;
+    box-shadow: #d1d1d1 -28px 0px 20px -30px inset;
+    border-left: 3px solid transparent;
 }
 .menu_sidebar .menu_item.active, .menu_sidebar .menu_item:hover {
     background: #8277e4;
     background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
     color: #fff;
+    border-left: 3px solid #5468ff;
 }
 .menu_sidebar .menu_name {
     width: 160px;
@@ -171,6 +173,7 @@ header .logo span {
     bottom: 0;
     color: #fff;
     max-width: 228px;
+    min-width: calc(100% + 1px);
 }
 .glance_bar p {
     margin: 3px 0;
@@ -209,6 +212,7 @@ header .logo span {
    padding: 6px 18px 8px;
     font-size: 15px;
     font-weight: 500;
+
 }
 .btn-group .btn-border {
     background: transparent;
@@ -217,10 +221,12 @@ header .logo span {
 .btn-group .btn-border:hover {
     background: #508ff9;
     color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 .btn-group .btn-bg-color:hover {
     background: transparent;
     color: #508ff9;
+    transition: all 0.3s ease-in-out;
 }
 .btn-group .btn:focus{
     box-shadow: none;
@@ -259,6 +265,10 @@ header .logo span {
 }
 .table td:nth-child(6) {
     /* text-align: center; */
+}
+.country img {
+    width: 22px;
+    margin-right: 6px;
 }
 .option_table {
     display: block;
@@ -303,7 +313,7 @@ header .logo span {
 
 .dark-mode .top_header {
     /*background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(62 67 83) 70.2%);*/
-    background: #3e4353;
+    background: #252b3d;
     color: #fff;
 }
 .dark-mode .logo {
@@ -330,6 +340,7 @@ header .logo span {
 }
 .dark-mode .menu_sidebar .icon {
     background: linear-gradient(112.1deg, rgb(89 94 109) 11.4%, rgb(62 67 83) 70.2%);
+    color: #f4e6c8;
 }
 .dark-mode .menu_sidebar .menu_item {
     border-bottom: 1px solid #333849;
@@ -341,7 +352,7 @@ header .logo span {
     margin-top: 0 !important;
 }
 .dark-mode .glance_bar .progress-bar {
-    background: #575757;
+    background: #eeb42c;
 }
 .dark-mode .menu_sidebar {
     background: #3a3f4f;
@@ -382,5 +393,8 @@ header .logo span {
 .dark-mode .btn.btn-border:hover {
     background: #3e4353;
     color: #fff;
-    transition: all 0.3s ease-in-out;
+}
+.dark-mode .btn-group .btn.btn-bg-color:hover {
+    background: transparent;
+    color: #fff;
 }
