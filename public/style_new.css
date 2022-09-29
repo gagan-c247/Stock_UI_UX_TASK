@@ -267,8 +267,10 @@ header .logo span {
     /* text-align: center; */
 }
 .country img {
-    width: 22px;
+    width: 20px;
+    height: 20px;
     margin-right: 6px;
+    border-radius: 50%;
 }
 .option_table {
     display: block;
