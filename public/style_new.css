@@ -71,6 +71,9 @@ body {
 .h-100vh {
     height: 100vh;
 }
+.top_header {
+    background: #f3f4f6;
+}
 header .logo {
     font-size: 17px;
     margin: 0;
@@ -89,6 +92,7 @@ header .logo span {
     width: 100%;
     max-height: 80vh;
     overflow: auto;
+    background: #fff;
 }
 
 .right_bar .checkbox {
@@ -97,9 +101,9 @@ header .logo span {
 }
 
 .right_bar .label {
-  width: 38px;
-  height: 20px;
-  background-color:#111;
+  width: 33px;
+    height: 17px;
+  background-color: #acacac;
   display: flex;
   border-radius:50px;
   align-items: center;
@@ -109,24 +113,24 @@ header .logo span {
   transform: scale(1.5);
 }
 .right_bar .label svg {
-    width: 11px;
-    height: 11px;
+    width: 10px;
+    height: 10px;
 }
 
 .right_bar .ball {
-  width: 16px;
-  height: 16px;
-  background-color: white;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
+  width: 13px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
 }
 
 /*  target the elemenent after the label*/
 .right_bar .checkbox:checked + .label .ball{
-  transform: translateX(17px);
+  transform: translateX(14px);
 }
 
 
@@ -146,12 +150,14 @@ header .logo span {
     color: #495057;
     box-shadow: #d1d1d1 -28px 0px 20px -30px inset;
     border-left: 3px solid transparent;
+    font-weight: 500;
 }
 .menu_sidebar .menu_item.active, .menu_sidebar .menu_item:hover {
-    background: #8277e4;
-    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-    color: #fff;
-    border-left: 3px solid #5468ff;
+    /*background: #8277e4;*/
+    /*background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);*/
+    /*color: #fff;*/
+    color: #4a58e5;
+    border-left: 3px solid #4a58e5;
 }
 .menu_sidebar .menu_name {
     width: 160px;
@@ -174,12 +180,17 @@ header .logo span {
     padding: 10px 15px;
     position: absolute;
     width: 100%;
-    background: linear-gradient(to left top, #685fb9, #5a85f2);
-    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    /*background: linear-gradient(to left top, #685fb9, #5a85f2);*/
+    /*background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);*/
     bottom: 0;
-    color: #fff;
+    color: #4a58e5;
     max-width: 228px;
     min-width: calc(100% + 1px);
+    /*border-top: 2px solid #aab8fd;*/
+    font-weight: 600;
+    border-right: 1px solid #e7e7e7;
+    font-weight: 600;
+    background: #f3f4f6;
 }
 .glance_bar p {
     margin: 3px 0;
@@ -188,10 +199,10 @@ header .logo span {
 .glance_bar .progress {
     border-radius: 15px;
     height: 10px;
-    background-color: #e9ecef;
+    background-color: #e1e1e1;
 }
 .glance_bar .progress-bar {
-    background: #4fb581;
+    background: #5473ed;
     height: 10px;
     border-radius: 8px;
 }
@@ -254,9 +265,9 @@ header .logo span {
 }
 .table thead th {
     vertical-align: bottom;
-    border-bottom: 1px solid #8277e440;
+    border-bottom: 1px solid #eeeeee;
     border-top: 0;
-    background: #8277e41c;
+    background: #f2f2f2;
     font-weight: 600;
 }
 .table tr th {
@@ -298,6 +309,22 @@ header .logo span {
     background: #e76975;
     color: #fff;
 }
+.not_found {
+    padding: 100px 0;
+}
+.not_found img {
+    width: 140px;
+}
+.not_found p {
+    font-size: 18px;
+    color: #555;
+}
+.not_found p span {
+    font-size: 22px;
+    color: #383838;
+    font-weight: 600;
+}
+
 
 /* --------- scrollbar css start --------- */
 .body_sec::-webkit-scrollbar {
@@ -319,6 +346,9 @@ header .logo span {
 
 /*   Dark mode css start here   */
 
+.dark-mode .body_sec {
+    background: linear-gradient(112.1deg, #3e4353 11.4%, #202639 70.2%);
+}
 .dark-mode .top_header {
     /*background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(62 67 83) 70.2%);*/
     background: #252b3d;
@@ -336,6 +366,10 @@ header .logo span {
 }
 .dark-mode .body_sec {
     background: linear-gradient(112.1deg, #3e4353 11.4%, #202639 70.2%);
+}
+.dark-mode .menu_sidebar {
+    /*background: #3a3f4f;*/
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(62 67 83) 70.2%);
 }
 .dark-mode .menu_sidebar .menu_item {
     background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(62 67 83) 70.2%);
@@ -360,13 +394,14 @@ header .logo span {
     background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(62 67 83) 70.2%);
     padding-top: 58px;
     margin-top: 0 !important;
+    border-color: transparent;
+    border-right: 0;
+    color: #fff;
 }
 .dark-mode .glance_bar .progress-bar {
     background: #eeb42c;
 }
-.dark-mode .menu_sidebar {
-    background: #3a3f4f;
-}
+
 .dark-mode .right_side_bar {
     /*background: linear-gradient(112.1deg, #3e4353 11.4%, #202639 70.2%);*/
 }
@@ -407,4 +442,16 @@ header .logo span {
 .dark-mode .btn-group .btn.btn-bg-color:hover {
     background: transparent;
     color: #fff;
+}
+.dark-mode .pagination p {
+    color: #fff;
+}
+.dark-mode .pagination nav a, .dark-mode .pagination nav span {
+    background: #2f3446;
+    color: #fff;
+    border-color: #3e4353;
+}
+.dark-mode 
+.right_bar .label {
+    background-color: #3a3f50;
 }
