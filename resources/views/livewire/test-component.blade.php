@@ -36,51 +36,49 @@
               <span class="icon"><i class="bi bi-house-door"></i></span>
               <span class="ml-2 menu_name" x-show="menu">Overview</span>
             </a>
-            {{-- {{url("/chart")}} --}}
-            {{-- wire:click="chart" --}}
             <a  href="#" wire:click="chart"  class="menu_item inline-flex items-center py-3 text-blue-600 bg-white px-2  {{$htmlData == 2 ? 'active' : ''}} "
               :class="{'justify-start': menu, 'justify-center': menu == false}">
               <span class="icon"><i class="bi bi-bar-chart"></i></span>
               <span class="ml-2 menu_name" x-show="menu">Chart</span>
             </a>
             <a href="#" wire:click="darkPool"
-              class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
+              class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2  {{$htmlData == 3 ? 'active' : ''}} "
               :class="{'justify-start': menu, 'justify-center': menu == false}">
               <span class="icon"><i class="bi bi-eye-slash"></i></span>
               <span class="ml-2 menu_name" x-show="menu">Dark Pool</span>
             </a>
             <a href="#" wire:click="divergences"
-              class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
+              class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2 {{$htmlData == 4 ? 'active' : ''}} "
               :class="{'justify-start': menu, 'justify-center': menu == false}">
               <span class="icon"><i class="bi bi-exclamation-triangle"></i></span>
               <span class="ml-2 menu_name" x-show="menu">Divergences</span>
             </a>
             <a href="#" wire:click="cycleData"
-              class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
+              class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2  {{$htmlData == 5 ? 'active' : ''}} "
               :class="{'justify-start': menu, 'justify-center': menu == false}">
               <span class="icon"><i class="bi bi-arrow-down-up"></i></span>
               <span class="ml-2 menu_name" x-show="menu">Cycle Data</span>
             </a>
             <a href="#" wire:click="pivotPoints"
-              class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
+              class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2  {{$htmlData == 6 ? 'active' : ''}}"
               :class="{'justify-start': menu, 'justify-center': menu == false}">
               <span class="icon"><i class="bi bi-file-earmark-text"></i></span>
               <span class="ml-2 menu_name" x-show="menu">Pivot Points</span>
             </a>
             <a href="#" wire:click="cheatSheet"
-              class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
+              class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2  {{$htmlData == 7 ? 'active' : ''}} "
               :class="{'justify-start': menu, 'justify-center': menu == false}">
               <span class="icon"><i class="bi bi-activity"></i></span>
               <span class="ml-2 menu_name" x-show="menu">Cheat Sheet</span>
             </a>
             <a href="#" wire:click="allTrades"
-              class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
+              class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2  {{$htmlData == 8 ? 'active' : ''}} "
               :class="{'justify-start': menu, 'justify-center': menu == false}">
               <span class="icon"><i class="bi bi-exclamation-triangle"></i></span>
               <span class="ml-2 menu_name" x-show="menu">All Trades</span>
             </a>
             <a href="#" wire:click="snapshots"
-              class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2"
+              class="menu_item inline-flex items-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 px-2  {{$htmlData == 9 ? 'active' : ''}} "
               :class="{'justify-start': menu, 'justify-center': menu == false}">
               <span class="icon"><i class="bi bi-camera"></i></span>
               <span class="ml-2 menu_name" x-show="menu">Snapshots</span>
