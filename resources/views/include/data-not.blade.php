@@ -19,7 +19,6 @@
                             <div>
                                 <img src="{{asset('images/no-data-found.png')}}" alt="" class="mx-auto" />
                                 <p class="mt-3 font-medium text-center">No Records Available in <br /><span>{{$title}} !</span></p>
-                                <!-- {{$title}} -->
                             </div>
                         </div>
                     </td>

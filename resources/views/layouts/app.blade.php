@@ -69,6 +69,12 @@
           document.body.classList.toggle('dark-mode');
         })
     </script>
+    <script>
+        function optionFlow() {
+           var element = document.getElementById('showOption');
+           element.classList.toggle("show");
+        }
+    </script>
   @livewireScripts
 
 </body>

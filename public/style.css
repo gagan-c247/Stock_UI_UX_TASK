@@ -266,6 +266,33 @@ header .logo span {
     outline: none;
 }
 
+.showOption {
+    position: absolute;
+    right: 25px;
+    background: #fff;
+    box-shadow: 0 0 6px #ccc;
+    padding: 8px 0;
+    border-radius: 6px;
+    display: none;
+}
+
+.showOption.show {
+    display: inline-block;
+}
+
+.showOption ul li {
+    padding: 7px 20px;
+}
+
+.showOption ul li span {
+    padding-left: 5px;
+}
+
+.showOption ul li:hover {
+    background: #e7e7e7;
+    transition: all 0.3s ease-in-out;
+}
+
 .body_content {
     padding: 0 25px;
 }
@@ -380,9 +407,15 @@ header .logo span {
 
 
 /*   Dark mode css start here   */
-
+.dark-mode {
+    background: linear-gradient(112.1deg, #3e4353 11.4%, #202639 70.2%);
+}
 .dark-mode .body_sec {
     background: linear-gradient(112.1deg, #3e4353 11.4%, #202639 70.2%);
+}
+.dark-mode .modal-btn {
+    background: #3a4051;
+    box-shadow: none;
 }
 
 .dark-mode .top_header {
@@ -538,4 +571,18 @@ header .logo span {
     font-size: 22px;
     color: #ffffff;
     font-weight: 600;
+}
+.dark-mode .option_btn {
+    color: #fff;
+}
+.dark-mode .showOption {
+    background: #313748;
+    box-shadow: 0 0 6px #454953;
+}
+.dark-mode .showOption ul li {
+    padding: 7px 20px;
+    color: #fff;
+}
+.dark-mode .showOption ul li:hover {
+    background: #3f4454;
 }
