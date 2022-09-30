@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Livewire\{TestComponent,Chart};
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/overview');
 });
-Route::get('/new', function () {
+Route::get('/overview', TestComponent::class);
+
+Route::get('/new', function(){
     return view('new');
 });
+
+
