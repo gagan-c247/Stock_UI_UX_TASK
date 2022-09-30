@@ -22,7 +22,7 @@
                       <div class='ball'></div>
                   </label>
               </div>
-                <button type="button" class="ml-4 py-2 px-4 rounded shadow-xl font-semibold" onclick="toggleModal()"><i
+                <button type="button" class="ml-4 py-2 px-4 rounded font-semibold" onclick="toggleModal()"><i
               class="fas fa-times"></i> X</button>
         </div>
       </header>

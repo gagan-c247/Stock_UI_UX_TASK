@@ -1,5 +1,15 @@
 body {
     font-family: 'Work Sans', sans-serif;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.body_sec main {
+    position: relative;
+}
+
+.fixed.inset-0 {
+    padding: 0 15px;
 }
 
 .sm\:max-w-lg {
@@ -396,6 +406,10 @@ header .logo span {
     background: #b6b6b6;
 }
 
+.menu_sidebar .bg-gray-800 {
+    background: #fff;
+}
+
 
 /* --------- scrollbar css end --------- */
 
@@ -407,12 +421,15 @@ header .logo span {
 
 
 /*   Dark mode css start here   */
+
 .dark-mode {
     background: linear-gradient(112.1deg, #3e4353 11.4%, #202639 70.2%);
 }
+
 .dark-mode .body_sec {
     background: linear-gradient(112.1deg, #3e4353 11.4%, #202639 70.2%);
 }
+
 .dark-mode .modal-btn {
     background: #3a4051;
     box-shadow: none;
@@ -572,17 +589,42 @@ header .logo span {
     color: #ffffff;
     font-weight: 600;
 }
+
 .dark-mode .option_btn {
     color: #fff;
 }
+
 .dark-mode .showOption {
     background: #313748;
     box-shadow: 0 0 6px #454953;
 }
+
 .dark-mode .showOption ul li {
     padding: 7px 20px;
     color: #fff;
 }
+
 .dark-mode .showOption ul li:hover {
     background: #3f4454;
+}
+
+.dark-mode .option_table {
+    background: transparent;
+}
+
+.dark-mode .menu_sidebar .bg-gray-800 {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(62 67 83) 70.2%);
+}
+
+@media (max-width: 767px) {
+    .sm\:max-w-lg {
+        margin-top: 30px;
+    }
+    .body_sec main {
+        /* max-width: 660px; */
+        /* overflow: auto; */
+    }
+    .option_table {
+        overflow: auto;
+    }
 }
