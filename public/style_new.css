@@ -313,7 +313,7 @@ header .logo span {
     padding: 100px 0;
 }
 .not_found img {
-    width: 140px;
+    width: 120px;
 }
 .not_found p {
     font-size: 18px;
@@ -341,7 +341,11 @@ header .logo span {
   background: #b6b6b6; 
 }
 /* --------- scrollbar css end --------- */
-
+.pagination .border-indigo-500 {
+    border-color: #bdc0c6;
+    background: #dedede;
+    color: #535353 !important;
+}
 
 
 /*   Dark mode css start here   */
@@ -451,7 +455,30 @@ header .logo span {
     color: #fff;
     border-color: #3e4353;
 }
-.dark-mode 
-.right_bar .label {
+.dark-mode .pagination .border-indigo-500 {
+    border-color: #3e4048;
+    background: #202639;
+    color: #f2f2f2 !important;
+}
+.dark-mode .right_bar .label {
     background-color: #3a3f50;
+}
+.dark-mode .body_sec::-webkit-scrollbar-track {
+  background: #383d4f; 
+}
+.dark-mode .body_sec::-webkit-scrollbar-thumb {
+  background: #525663; 
+  border-radius: 4px;
+}
+.dark-mode .body_sec::-webkit-scrollbar-thumb:hover {
+  background: #575a65; 
+}
+.dark-mode .not_found p {
+    font-size: 18px;
+    color: #b2b2b2;
+}
+.dark-mode .not_found p span {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 600;
 }
