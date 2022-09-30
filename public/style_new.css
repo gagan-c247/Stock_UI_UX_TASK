@@ -84,6 +84,12 @@ header .logo span {
 .header-shadow {
     box-shadow: 0 0.46875rem 2.1875rem rgb(4 9 20 / 3%), inset 0 0.9375rem 1.40625rem rgb(4 9 20 / 3%), inset 0 0.25rem 0.53125rem rgb(4 9 20 / 5%), inset 0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
 }
+.body_sec {
+    display: flex;
+    width: 100%;
+    max-height: 80vh;
+    overflow: auto;
+}
 
 .right_bar .checkbox {
   opacity: 0;
@@ -294,17 +300,17 @@ header .logo span {
 }
 
 /* --------- scrollbar css start --------- */
-.modal_main::-webkit-scrollbar {
+.body_sec::-webkit-scrollbar {
   width: 10px;
 }
-.modal_main::-webkit-scrollbar-track {
+.body_sec::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
-.modal_main::-webkit-scrollbar-thumb {
+.body_sec::-webkit-scrollbar-thumb {
   background: #cccccc; 
   border-radius: 4px;
 }
-.modal_main::-webkit-scrollbar-thumb:hover {
+.body_sec::-webkit-scrollbar-thumb:hover {
   background: #b6b6b6; 
 }
 /* --------- scrollbar css end --------- */
@@ -328,7 +334,9 @@ header .logo span {
     font-size: 14px;
     color: #e5e5e5;
 }
-
+.dark-mode .body_sec {
+    background: linear-gradient(112.1deg, #3e4353 11.4%, #202639 70.2%);
+}
 .dark-mode .menu_sidebar .menu_item {
     background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(62 67 83) 70.2%);
     color: #fff;
@@ -360,7 +368,7 @@ header .logo span {
     background: #3a3f4f;
 }
 .dark-mode .right_side_bar {
-    background: linear-gradient(112.1deg, #3e4353 11.4%, #202639 70.2%);
+    /*background: linear-gradient(112.1deg, #3e4353 11.4%, #202639 70.2%);*/
 }
 .dark-mode .option-header {
     border-bottom: 1px solid #494a4e;
