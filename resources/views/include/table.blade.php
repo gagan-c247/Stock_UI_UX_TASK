@@ -33,7 +33,7 @@
               </tr>
               <tr>
                 <th scope="row">STIX</th>
-                <td>Semantic Inc.</td>
+                <td>Semantix, Inc.</td>
                 <td class="country flex items-center"><img src="{{asset('images/brazil.png')}}" alt="" />Brazil</td>
                 <td>214.73M</td>
                 <td>$2.8</td>
@@ -60,7 +60,7 @@
               </tr>
               <tr>
                 <th scope="row">STIX</th>
-                <td>Semantic Inc.</td>
+                <td>Semantix, Inc.</td>
                 <td class="country flex items-center"><img src="{{asset('images/brazil.png')}}" alt="" />Brazil</td>
                 <td>214.73M</td>
                 <td>$2.8</td>
