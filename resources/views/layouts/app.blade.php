@@ -12,7 +12,6 @@
   <title>Laravel Tailwind</title>
 
   <!-- Links -->
-  <!-- <link  href="../css/style.css" rel="stylesheet"> -->
   @livewireStyles
 
   <!-- Icons -->
@@ -24,12 +23,6 @@
   <meta name="description" content="This is an example dashboard created using build-in elements and components.">
   <meta name="msapplication-tap-highlight" content="no">
 
-  <!-- <link rel="stylesheet" type="text/css" href="{{asset('main.css')}}"> -->
-
-  <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
-
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> -->
-
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@400;500;600;700;800&display=swap"
@@ -39,7 +32,7 @@
 
   <!-- Styles -->
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="{{asset('style_new.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('style.css')}}">
 
 </head>
 
@@ -58,20 +51,12 @@
       <div class="modal_main inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
         role="dialog" aria-modal="true" aria-labelledby="modal-headline">
           {{$slot}}
-        <!-- <div class="bg-gray-200 px-4 py-3 text-right">
-          <button type="button" class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2"
-            onclick="toggleModal()"><i class="fas fa-times"></i> Cancel</button>
-          <button type="button" class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 mr-2"><i
-              class="fas fa-plus"></i> Create</button>
-        </div> -->
+        
       </div>
     </div>
   </div>
 
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"
-    integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA=="
-    crossorigin="anonymous"></script>
+  <script src="{{asset('js/alpine.js')}}"></script>
   <script type="text/javascript">
     function toggleModal() {
       document.getElementById('modal').classList.toggle('hide')
@@ -79,24 +64,6 @@
   </script>
 
     <script>
-    // const root = document.querySelector(".tabs"),tabs=root.querySelectorAll(".tab"),btns=root.querySelectorAll(".btn");
-    //   root.onclick = function(e){
-    //     var t = e.target,val = t.getAttribute("tab");
-    //     if(val != null){
-    //       tabs.forEach(each=>{each.classList.remove("active-tab");});
-    //       btns.forEach(each=>{each.classList.remove("active-button");});
-    //       tabs[val - 1].classList.add("active-tab");
-    //       btns[val - 1].classList.add("active-button");
-    //     }
-    //   }
-    </script>
-
-    <script>
-        // function myFunction() {
-        //    var element = document.body;
-        //    element.classList.toggle("dark-mode");
-        // }
-
         const checkbox = document.getElementById('checkbox');
         checkbox.addEventListener('change', ()=>{
           document.body.classList.toggle('dark-mode');
