@@ -5,11 +5,16 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport"
-  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
   <meta name="description" content="User interface (UI) ">
   <meta name="msapplication-tap-highlight" content="no">
+  <meta property="og:image" content="{{asset("/images/favicon.png")}}">
+  <meta property="og:" content="{{asset("/images/favicon.png")}}">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="200">
+  <meta property="og:image:height" content="200">
+  <meta property="og:title" content="User interface (UI) | Test Task 2022">
+  <meta property="og:description" content="Powered by - Chapter247 Infotech Pvt. Ltd.">
   <title>{{config('app.name')}}</title>
   <link rel="icon" href="{{asset("/images/favicon.png")}}">
 
@@ -20,7 +25,7 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" />
 
-
+`
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
